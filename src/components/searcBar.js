@@ -31,6 +31,7 @@ const API_KEY="07942d0de47eb767714734c476425578";
           className="search"
           type="text"
           value={query}
+          
           placeholder="Enter a City"
           onChange={inputhandler}
          onBlur={weatherfetcher}
@@ -40,7 +41,7 @@ const API_KEY="07942d0de47eb767714734c476425578";
     {
         weathers &&  <div className="weather"> {
             <>
-            <h2>{query}</h2>
+            <h2>{weathers.name}</h2>
            <h1>{weathers.main.temp}F</h1>
            <p>{weathers.weather[0].description}</p>
             
