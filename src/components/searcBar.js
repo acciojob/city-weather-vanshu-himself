@@ -34,7 +34,9 @@ const API_KEY="07942d0de47eb767714734c476425578";
           
           placeholder="Enter a City"
           onChange={inputhandler}
-         onBlur={weatherfetcher}
+         onBlur={()=>{weatherfetcher()
+        setQuery("")}}
+
           />
           <div>
 
@@ -47,8 +49,8 @@ const API_KEY="07942d0de47eb767714734c476425578";
            <p>{weathers.weather[0].description}</p>
            <div className="icon">
             <img
-              src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`}
-              alt={weather.weather[0].description}
+              src={`http://openweathermap.org/img/w/${weathers.weather[0].icon}.png`}
+              alt={weathers.weather[0].description}
             />
           </div>
             
