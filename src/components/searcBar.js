@@ -38,7 +38,7 @@ const API_KEY="07942d0de47eb767714734c476425578";
         setQuery("")}}
 
           />
-          <div>
+          <div>    
 
     {
         weathers &&   (
